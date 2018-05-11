@@ -18,6 +18,5 @@ RUN mkdir -p $HOME && chown nimiq:nimiq $HOME
 WORKDIR $HOME
 USER nimiq
 
-COPY nimiq.conf /etc/nimiq/nimiq.conf
-
-CMD /usr/share/nimiq/app/node /usr/share/nimiq/app/index.js --config=/etc/nimiq/nimiq.conf --pool=eu.nimpool.io:8444
+ENTRYPOINT ["/usr/share/nimiq/app/node", "/usr/share/nimiq/app/index.js", "--dumb", "--miner"]
+CMD ["--pool=eu.nimpool.io:8444", "--wallet-address=NQ46UGCV26ET160EE9VU5XHGQSXHYSUY2RVQ"]
