@@ -12,7 +12,15 @@ You will then have a running *dumb* Nimiq miner that uses all the available reso
 
 To see the output from the miner, run
 
-    $ docker logs myminer
+    $ docker logs -t -f myminer
+
+To stop the miner:
+
+    $ docker stop myminer
+
+To restart the miner:
+
+    $ docker restart myminer
 
 ## Build
 
@@ -24,6 +32,6 @@ To see the output from the miner, run
 - [x] Get a Nimiq miner up and running locally.
 - [x] Make the Nimiq account configurable.
 - [x] Get the miner to connect to a mining pool.
-- [ ] Mount a volume where the data is stored so that the container can be restarted without having to resync.
+- [x] Mount a volume where the data is stored so that the container can be restarted without having to resync.
 - [ ] Make a HTTP endpoint that reports the status of the miner.
 
