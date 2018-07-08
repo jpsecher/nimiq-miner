@@ -35,3 +35,6 @@ To restart the miner:
 - [x] Mount a volume where the data is stored so that the container can be restarted without having to resync.
 - [ ] Make a HTTP endpoint that reports the status of the miner.
 
+----
+
+[![Docker build status](https://img.shields.io/docker/build/jpsecher/nimiq-miner.svg)](https://hub.docker.com/r/jpsecher/nimiq-miner/builds/)
