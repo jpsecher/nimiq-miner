@@ -8,7 +8,7 @@ This is a [Nimiq](https://nimiq.com) cryptocurrency miner.  Run it like
 
 Of course, you need to replace the wallet with your own (but you are welcome to use mine ;-), and maybe change the pool if you fancy a different one, or simply go solo and leave out the pool argument.
 
-You will then have a running *dumb* Nimiq miner that uses all the available resources for mining.
+You will then have a running Nimiq miner that uses all the available resources for mining.
 
 To see the output from the miner, run
 
