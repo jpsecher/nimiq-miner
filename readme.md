@@ -2,8 +2,10 @@
 
 This is a [Nimiq](https://nimiq.com) cryptocurrency miner.  Run it like
 
-    $ docker run -d --name myminer jpsecher/nimiq-miner \
-    	--mount 'type=volume,source=nimiq-miner,destination=/home/nimiq'
+    $ docker run -d \
+        --name nimiq-miner-1.5.0 \
+        --mount 'type=volume,source=nimiq-miner,destination=/home/nimiq' \
+        jpsecher/nimiq-miner \
         --pool=eu.nimpool.io:8444 \
         --wallet-address=NQ46UGCV26ET160EE9VU5XHGQSXHYSUY2RVQ
 
