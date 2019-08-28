@@ -18,7 +18,6 @@ ENV HOME=/home/nimiq
 RUN mkdir -p $HOME && chown nimiq:nimiq $HOME
 WORKDIR $HOME
 USER nimiq
-VOLUME $HOME
 
 ENTRYPOINT ["/usr/share/nimiq/app/node", "/usr/share/nimiq/app/index.js", "--protocol=dumb", "--miner"]
 CMD ["--pool=eu.nimpool.io:8444", "--wallet-address=NQ46UGCV26ET160EE9VU5XHGQSXHYSUY2RVQ"]
