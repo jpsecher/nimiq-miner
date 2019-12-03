@@ -7,7 +7,7 @@ This is a [Nimiq](https://nimiq.com) cryptocurrency miner.  Run it like
         --mount 'type=volume,source=nimiq-miner,destination=/home/nimiq' \
         jpsecher/nimiq-miner \
         --pool=eu.nimpool.io:8444 \
-        --wallet-address=NQ46UGCV26ET160EE9VU5XHGQSXHYSUY2RVQ
+        --wallet-address=NQ6272GHCS6H3XL5L09SFGAM34MK7CU11JFE
 
 Of course, you need to replace the wallet with your own (but you are welcome to use mine ;-), and maybe change the pool if you fancy a different one, or simply go solo and leave out the pool argument.
 
