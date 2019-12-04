@@ -26,7 +26,7 @@ Of course, you need to replace the wallet with your own (but you are welcome to 
 
 You will then have a running Nimiq miner that uses all the available resources for mining.
 
-To see the output from the miner, run one of
+To see the output from the miner, run one of:
 
     $ docker logs -t -f myminer
     $ docker-compose logs
@@ -39,7 +39,7 @@ To stop the miner:
 To restart the miner:
 
     $ docker restart myminer
-    $ docker-compose stop
+    $ docker-compose restart
 
 ## Build
 
