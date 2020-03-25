@@ -4,8 +4,8 @@ services:
   nimiq-miner:
     image: jpsecher/nimiq-miner
     volumes:
-      - nimiq-miner:/home/nimiq
+      - data:/home/nimiq
     restart: on-failure
 
 volumes:
-  nimiq-miner:
+  data:

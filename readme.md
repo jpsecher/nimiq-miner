@@ -3,7 +3,7 @@
 This is a [Nimiq](https://nimiq.com) cryptocurrency miner.  Run it like
 
     $ docker run -d \
-        --name nimiq-miner-1.5.3 \
+        --name nimiq-miner \
         --mount 'type=volume,source=nimiq-miner,destination=/home/nimiq' \
         jpsecher/nimiq-miner \
         --pool=eu.nimpool.io:8444 \
@@ -28,7 +28,7 @@ You will then have a running Nimiq miner that uses all the available resources f
 
 To see the output from the miner, run one of:
 
-    $ docker logs -t -f myminer
+    $ docker logs -t -f nimiq-miner
     $ docker-compose logs
 
 To stop the miner:

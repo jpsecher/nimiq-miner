@@ -1,0 +1,15 @@
+version: "3.5"
+
+services:
+  nimiq-miner:
+    image: jpsecher/nimiq-miner
+    volumes:
+      - data:/home/nimiq
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+      restart_policy:
+        condition: on-failure
+volumes:
+  data:
