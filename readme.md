@@ -31,17 +31,20 @@ To see the output from the miner, run one of:
     $ docker logs -t -f nimiq-miner
     $ docker-compose logs
 
-To stop the miner:
+To update the miner:
 
-    $ docker stop myminer
+    $ docker stop nimiq-miner
+    $ docker rm nimiq-miner
+    $ docker pull jpsecher/nimiq-miner
+    $ docker run -d --mount ... (like above) ...
+
+or
+
     $ docker-compose stop
+    $ docker-compose pull
+    $ docker-compose up -d
 
-To restart the miner:
-
-    $ docker restart myminer
-    $ docker-compose restart
-
-## Build
+## Build container
 
     $ cd src/miner
     $ docker build -t jpsecher/nimiq-miner .

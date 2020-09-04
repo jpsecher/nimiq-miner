@@ -4,7 +4,7 @@ services:
   nimiq-miner:
     image: jpsecher/nimiq-miner
     volumes:
-      - data:/home/nimiq
+      - nimiq-miner:/home/nimiq
     deploy:
       resources:
         limits:
@@ -12,4 +12,4 @@ services:
       restart_policy:
         condition: on-failure
 volumes:
-  data:
+  nimiq-miner:
