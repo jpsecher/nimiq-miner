@@ -7,7 +7,7 @@ COPY nimiq-signing-key.pub /
 RUN apt-key add nimiq-signing-key.pub && \
     rm -f nimiq-signing-key.pub
 
-ARG VERSION=1.5.5-1
+ARG VERSION=1.5.7-1
 COPY nimiq_${VERSION}_amd64.deb.asc nimiq_${VERSION}_amd64.deb.sha256sum /
 RUN curl -O https://repo.nimiq.com/deb/pool/stable/main/n/nimiq/nimiq_${VERSION}_amd64.deb && \
     sha256sum -c nimiq_${VERSION}_amd64.deb.sha256sum && \
