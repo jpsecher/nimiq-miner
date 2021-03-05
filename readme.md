@@ -51,4 +51,4 @@ or
 
 ----
 
-[![Docker build status](https://img.shields.io/docker/build/jpsecher/nimiq-miner.svg)](https://hub.docker.com/r/jpsecher/nimiq-miner/builds/)
+[![Docker build status](https://img.shields.io/docker/cloud/build/jpsecher/nimiq-miner.svg)](https://hub.docker.com/r/jpsecher/nimiq-miner/builds/)
