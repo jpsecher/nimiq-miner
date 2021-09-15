@@ -3,7 +3,7 @@ version: "3.5"
 services:
   nimiq-miner:
     image: jpsecher/nimiq-miner
-    command: --wallet-address=NQ6272GHCS6H3XL5L09SFGAM34MK7CU11JFE --type=light --pool=us.nimpool.io:8444
+    command: --wallet-address=NQ6272GHCS6H3XL5L09SFGAM34MK7CU11JFE --type=light --pool=pool.nimiq.watch:8443
     volumes:
       - nimiq-miner:/home/nimiq
     deploy:
