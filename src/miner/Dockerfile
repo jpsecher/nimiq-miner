@@ -20,4 +20,4 @@ WORKDIR $HOME
 USER nimiq
 
 ENTRYPOINT ["/usr/share/nimiq/app/node", "/usr/share/nimiq/app/index.js", "--protocol=dumb", "--miner"]
-CMD ["--pool=pool.nimiq.watch:8443", "--type=light", "--wallet-address=NQ6272GHCS6H3XL5L09SFGAM34MK7CU11JFE"]
+CMD ["--pool=pool.acemining.co:8443", "--type=light", "--wallet-address=NQ6272GHCS6H3XL5L09SFGAM34MK7CU11JFE"]

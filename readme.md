@@ -6,7 +6,7 @@ This is a [Nimiq](https://nimiq.com) cryptocurrency miner.  Run it like
         --name nimiq-miner \
         --mount 'type=volume,source=nimiq-miner,destination=/home/nimiq' \
         jpsecher/nimiq-miner \
-        --pool=pool.nimiq.watch:8443 \
+        --pool=pool.acemining.co:8443 \
         --wallet-address=NQ6272GHCS6H3XL5L09SFGAM34MK7CU11JFE
 
 Or start it with `docker-compose up -d`:
