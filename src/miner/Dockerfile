@@ -1,13 +1,13 @@
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 MAINTAINER Jens Peter Secher <jpsecher@gmail.com>
 
-RUN apt-get update && apt-get install -y curl
+RUN apt-get update && apt-get install -y curl gnupg2
 
 COPY nimiq-signing-key.pub /
 RUN apt-key add nimiq-signing-key.pub && \
     rm -f nimiq-signing-key.pub
 
-ARG VERSION=1.5.8-1
+ARG VERSION=1.6.1-1
 COPY nimiq_${VERSION}_amd64.deb.asc nimiq_${VERSION}_amd64.deb.sha256sum /
 RUN curl -sS -O https://repo.nimiq.com/deb/pool/stable/main/n/nimiq/nimiq_${VERSION}_amd64.deb && \
     sha256sum -c nimiq_${VERSION}_amd64.deb.sha256sum && \
